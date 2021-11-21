@@ -24,7 +24,7 @@
   function draw(e){
     if(!isDrawing) return; //stop the fn from running nwhen they are not moused down
     console.log(e);
-    ctx
+    ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
     ctx.beginPath();
     // start from
     ctx.moveTo(lastX, lastY);
